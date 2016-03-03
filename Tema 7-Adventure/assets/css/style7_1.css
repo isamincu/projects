@@ -1,0 +1,559 @@
+/*.col-100 {
+  width: 100%;
+}
+
+.col-50 {
+  width: 50%;
+}
+
+.col-25 {
+  width: 25%;
+}
+
+.col-33 {
+  width: 33.3333%;
+}
+
+.col-66 {
+  width: 66.6666%;
+}
+
+.col-75 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 10%;
+}
+
+.col-20 {
+  width: 20%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+.cf:before,
+.cf:after,
+.row:before,
+.row:after {
+    content: "";
+    display: table;
+}
+
+.cf:after,
+.row:after {
+  clear: both;
+}
+
+[class^="col-"],
+[class*=" col-"] {
+  float: left;
+}
+*/
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 960px;
+}
+
+html,
+body {
+  height: 100%;
+  max-height: 100%;
+  margin: 0;
+  font-size: 14px;
+  font-family: 'Arial', sans-serif;
+}
+
+.vertical {
+  position: relative;
+  display: table;
+  width: 100%;
+}
+
+.vertical .inner {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.header {
+  height: 100%;
+  background: url('../img/desert.jpg') no-repeat;
+  background-size: cover;
+}
+
+.searchbox-hamburger {
+    cursor: pointer;
+    padding: 12px 16px;
+    float:left;
+}
+
+.navigation-bar {
+  position: absolute;
+  width: 100%;
+}
+
+.navigation {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navigation-container {
+float: left;
+width: 50%;
+}
+
+.brand {
+  width: 100px;
+}
+
+.searchbox-hamburger-container {
+  float: left;
+}
+
+.searchbox-hamburger-container {
+  width: 20%;
+}
+.searchbox-hamburger {
+    display: block;
+    cursor: pointer;
+    padding: 12px 16px;
+}
+button, input, textarea {
+    color: inherit;
+}
+
+a, button, h1, h2, h3, h4, h5, h6, input, ol, p, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font: inherit;
+    vertical-align: baseline;
+    background: transparent;
+    list-style: none;
+    overflow: visible;
+    }
+
+
+.c-menu {
+  position: fixed;
+  z-index: 200;
+  background-color: #67b5d1;
+  transition: transform 0.3s;
+}
+
+.c-menu__items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Close button resets.
+ */
+.c-menu__close {
+  color: #fff;
+  background-color: #3184a1;
+  font-size: 14px;
+  border: none;
+  box-shadow: none;
+  border-radius: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+/**
+ * Close button resets.
+ */
+.c-menu__close:focus {
+  outline: none;
+}
+
+/**
+ * Body states.
+ *
+ * When a menu is active, we want to hide the overflows on the body to prevent
+ * awkward document scrolling.
+ */
+body.has-active-menu {
+  overflow: hidden;
+}
+
+/**
+ * Mask component
+ */
+
+.c-mask {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+  background-color: #000;
+  opacity: 0;
+  transition: opacity 0.3s, width 0s 0.3s, height 0s 0.3s;
+}
+
+.c-mask.is-active {
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+.c-menu--slide-left,
+.c-menu--slide-right,
+.c-menu--push-left,
+.c-menu--push-right {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+@media all and (min-width: 320px) {
+  .c-menu--slide-left, {
+    width: 300px;
+  }
+}
+
+.c-menu--slide-left .c-menu__item {
+  display: block;
+  text-align: center;
+  border-top: solid 1px #b5dbe9;
+  border-bottom: solid 1px #3184a1;
+}
+
+.c-menu--slide-left .c-menu__item:first-child {
+  border-top: none;
+}
+
+.c-menu--slide-left .c-menu__item:last-child {
+  border-bottom: none;
+}
+
+.c-menu--slide-left .c-menu__link {
+  display: block;
+  padding: 12px 24px;
+  color: #fff;
+}
+
+.c-menu--slide-left .c-menu__close {
+  display: block;
+  padding: 12px 24px;
+  width: 100%;
+}
+
+.c-menu--slide-left {
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+}
+
+@media all and (min-width: 320px) {
+  .c-menu--slide-left {
+    transform: translateX(-300px);
+  }
+}
+
+.c-menu--slide-left.is-active,
+.c-menu--push-left.is-active {
+  transform: translateX(0);
+}
+
+#c-menu--slide-left:hover {
+  transform: none;
+}
+
+
+.navigation-list {
+  margin-left: 10px;
+  margin-right: 10px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.navigation-list li {
+    list-style: none;
+    display: inline-block;
+    
+}
+
+.navigation-list li a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.widget-pane-visible .widget-pane-toggle-button-container {
+    display: block;
+}
+
+.widget-pane-toggle-button-container {
+    position: absolute;
+    z-index: 0;
+    top: 8px;
+    left: 100%;
+    display: none;
+  }
+
+.widget-pane-toggle-button {
+    width: 23px;
+    height: 48px;
+    cursor: pointer;
+    background: rgba(255,255,255,0.9) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAUCAQAAAAXDMSnAAAAi0lEQ…ueTldC08kcT5YOY9xYujqQM03XKXuaLmEtNF1e1Nz89gbL+0do6OEwRwAAAABJRU5ErkJggg==) 7px center/7px 10px no-repeat;
+    box-shadow: 0px 1px 4px rgba(0,0,0,0.3);
+}
+button, input, textarea {
+    color: inherit;
+}
+a, button, h1, h2, h3, h4, h5, h6, input, ol, p, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font: inherit;
+    vertical-align: baseline;
+    background: transparent;
+    list-style: none;
+    overflow: visible;
+}
+
+.title {
+  text-transform: uppercase;
+}
+
+.hero-unit {
+  text-align: center;
+  color: white;
+}
+
+.hero-unit .title {
+  font-family: 'Nothing You Could Do', cursive;
+  font-size: 74px;
+  text-transform: none;
+}
+
+.hero-unit .sub-title {
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+.btn {
+  padding: 12px 16px;
+  color: white;
+  background-color: #c2c2c2;
+  border: 1px solid #B1B1B1;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 20px;
+}
+
+.btn-primary {
+  background-color: #2F90EF;
+  border-color: #1061AF;
+}
+
+.proof {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.proof .call-action {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+}
+
+.adventures-list {
+
+}
+
+/*.adventures-list .adventure-item .outer {
+  position: relative;
+  min-height: 200px;
+}
+
+.adventures-list .adventure-item .inner {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+
+  background-color: green;
+  width: 50%;
+}*/
+
+/*.adventures-list .adventure-item {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+*/
+.adventures-list .adventure-item .action {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.adventures-list .adventure-item .outer {
+    position: relative;
+    height: 200px;
+    /*background-color: yellow;
+}
+
+.adventures-list .adventure-item .inner {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+    /*background-color: green;*/
+    width: 100%;
+    text-align: center;
+}
+
+/*.first {
+  width: 100%;
+  height: 100vh;
+  background-image: url(desert.jpg);
+}
+
+.left{
+  float: left;
+}
+
+.right{
+  float: right;
+}
+
+.header ul{
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+
+ul img{
+  height: 40px;
+}
+
+li {
+    display: inline;
+}
+
+li a{
+    text-decoration: none;
+}
+
+.first p{
+  color: white;
+}
+
+.main #title, .main #subtitle{
+  font-family: 'Nothing You Could Do', cursive;
+  font-size: 70px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.main{
+  display: table;
+}
+
+.third img,.fourth img{
+  height: 400px;
+}*/
+
+.grid {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.grid:before,
+.grid:after,
+.row:before,
+.row:after {
+  content: " ";
+  display: table;
+}
+
+.grid:after,
+.row:after {
+  clear: both;
+}
+
+[class*='col-'] {
+  width: 100%;
+  float: left;
+  min-height: 1px;
+}
+
+.col {
+  padding: 1em;
+  margin: 8px;
+  background: white;
+  border-radius: 2px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  color: red;
+  text-align: center;
+}
+
+@media screen and (min-width:320px){
+
+  .col-wd-1 {width: 8.33333%;}
+  .col-wd-2 {width: 16.66667%;}
+  .col-wd-3 {width: 25%;}
+  .col-wd-4 {width: 33.33333%;}
+  .col-wd-5 {width: 41.66667%;}
+  .col-wd-6 {width: 50%;}
+  .col-wd-7 {width: 58.33333%;}
+  .col-wd-8 {width: 66.66667%;}
+  .col-wd-9 {width: 75%;}
+  .col-wd-10 {width: 83.33333%;}
+  .col-wd-11 {width: 91.66667%;}
+  .col-wd-12 {width: 100%;}
+}
+
+@media screen and (min-width:640px){
+
+  .col-md-1 {width: 8.33333%;}
+  .col-md-2 {width: 16.66667%;}
+  .col-md-3 {width: 25%;}
+  .col-md-4 {width: 33.33333%;}
+  .col-md-5 {width: 41.66667%;}
+  .col-md-6 {width: 50%;}
+  .col-md-7 {width: 58.33333%;}
+  .col-md-8 {width: 66.66667%;}
+  .col-md-9 {width: 75%;}
+  .col-md-10 {width: 83.33333%;}
+  .col-md-11 {width: 91.66667%;}
+  .col-md-12 {width: 100%;}
+}
+
+@media screen and (min-width:960px){
+
+  .col-sm-1 {width: 8.33333%;}
+  .col-sm-2 {width: 16.66667%;}
+  .col-sm-3 {width: 25%;}
+  .col-sm-4 {width: 33.33333%;}
+  .col-sm-5 {width: 41.66667%;}
+  .col-sm-6 {width: 50%;}
+  .col-sm-7 {width: 58.33333%;}
+  .col-sm-8 {width: 66.66667%;}
+  .col-sm-9 {width: 75%;}
+  .col-sm-10 {width: 83.33333%;}
+  .col-sm-11 {width: 91.66667%;}
+  .col-sm-12 {width: 100%;}
+}

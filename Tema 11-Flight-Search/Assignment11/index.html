@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Search fight</title>
+    <link rel="stylesheet" type="text/css"  href="../bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css"  href="../bootstrap/css/bootstrap-theme.css">
+    <link rel="stylesheet" type="text/css"  href="../jquery-ui-1.11.4.custom/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css"  href="css/styles.css">
+
+</head>
+<body>
+
+    <div class="container main-container">
+        <div class="row">
+            <div class="inner-form">
+                <div class="form-container col-sm-6 col-sm-offset-3">
+                    <div class="col-sm-12 text-center">
+                        <span class="plane-logo"><img src="http://s3.amazonaws.com/gs.apps.icons/_QsZUut1EeK1GRIxPR901Q_%2FAirplane+Logo.png" /></span>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p class="text-center-big">FLY AWAY</p>
+                            <p class="text-center-small">SOMEWHERE</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <form class="form-inline" id="flight-search">
+                            <div class="form-group col-sm-12">
+                                <label for="flight-departure" class="col-sm-4">I want to fly from</label>
+                                <input id="flight-departure" class="form-control" type="text">
+                            </div>
+                            <div class="form-group col-sm-12">
+                                <label class="col-sm-1 to" for="flight-destination">to</label>
+                                <input id="flight-destination" class="form-control" type="text">
+                            </div>
+
+                            <div class="form-group col-sm-12">
+                                <label class="col-sm-4">I will be flying</label>
+                                <div class="input-group-btn">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        With others <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">WITH OTHERS</a></li>
+                                        <li><a href="#">ALONE</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="form-group col-sm-12">
+                                <label class="col-sm-4 control-label" for="persons">There will be</label>
+                                <input id="persons" class="form-control" type="text">
+                                <label class="control-label" for="persons">people in total</label>
+                            </div>
+
+
+                            <div class="form-group col-sm-12">
+                                <label class="col-sm-3 control-label">This is a</label>
+                                <div class="input-group-btn">
+                                    <button type="button" class="btn btn-default dropdown-toggle special" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Return <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Departure</a></li>
+                                        <li><a href="#">Departure-Return</a></li>
+                                    </ul>
+                                    <label class="flight">flight</label>
+                                </div>
+                            </div>
+
+                            <div class="form-group col-sm-12">
+                                <label class="col-sm-4 control-label">My dates are</label>
+                                <div class="input-group-btn">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Flexible <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Flexible</a></li>
+                                        <li><a href="#">Fixed</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="form-group col-sm-12">
+                                <label for="departure-date" class="col-sm-4 control-label">Departure date</label>
+                                <input id="departure-date" placeholder="  /  /"  class="form-control datepicker" type="text"><span class="glyphicon glyphicon-calendar"></span>
+                            </div>
+
+                            <div class="form-group col-sm-12">
+                                <label for="return-date" class="col-sm-4 control-label">Return date </label>
+                                <input id="return-date" placeholder="  /  /" class="form-control datepicker" type="text"><span class="glyphicon glyphicon-calendar"></span>
+                            </div>
+                            <button class="btn-footer"><a href="http://www.booking.com/">FIND FLIGHTS</a></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script type="text/javascript" src="js/jquery-1.12.1.min.js"></script>
+<script type="text/javascript" src="../jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/assignment11.js"></script>
+
+<script>
+  $(function() {
+    $( ".datepicker" ).datepicker();
+  });
+  </script>
+</html>

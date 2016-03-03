@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Jesse</title>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+</head>
+<body>
+	<div class="outer">
+	</div>
+	<div class="form-container">
+		<div class="row">
+			<div class="col-sm-12 details-section">
+				<div class="image">
+					<img src="img/Jesse.jpeg" />
+				</div>
+				<div class="personal-details">
+					<h4>JESSE PINKMAN</h4>
+					<input type="text" placeholder="Some other descriptive text. Address or Email?" />
+				</div>
+			</div>
+		</div>
+		<div class="row-tabs">
+			<div class="col-sm-6 tab active left" data-target="#pane-1">
+				<h5>PAYMENT DETAILS</h5>
+				<span class="glyphicon glyphicon-triangle-top text-center tab-arrow"></span>
+			</div>
+			<div class="col-sm-6 tab right" data-target="#pane-2">
+				<h5>BILLING INFO</h5>
+				<span class="glyphicon glyphicon-triangle-top text-center tab-arrow"></span>
+			</div>
+		</div>
+		<div class="row row-payment-details">
+			<div class="pane left active" id="pane-1">
+				<div class="col-sm-6 no-padding">
+					<input type="text" class="borderless-left borderless-bottom borderless-top" placeholder="First name"/>
+				</div>
+				<div class="col-sm-1 no-padding">
+					<input type="text" placeholder="M/F" class="gender"/>
+				</div>
+				<div class="col-sm-5 no-padding">
+					<input type="text" placeholder="Last name" class="borderless-right borderless-bottom borderless-top"/>						
+				</div>
+				<div class="col-sm-12 no-padding">
+					<input type="text" placeholder="Your email address" class="borderless-left borderless-right borderless-bottom" />						
+				</div>
+				<div class="col-sm-12 no-padding">
+					<input type="text" placeholder="What is the payment for?" class="borderless-left borderless-right borderless-bottom"/>						
+				</div>
+				<div class="col-sm-6 main-select borderless-left">
+					<h1>$50.00</h1>
+				</div>
+				<div class="col-sm-6 select-panel borderless-bottom borderless-left borderless-right">
+					<div class="row grid-select-amount">
+						<div class="col-sm-4 text-center select-amount borderless-left">$1</div>
+						<div class="col-sm-4 text-center select-amount">$5</div>
+						<div class="col-sm-4 text-center select-amount">$10</div>
+						<div class="col-sm-4 text-center select-amount borderless-left">$20</div>
+						<div class="col-sm-4 text-center select-amount active">$50</div>
+						<div class="col-sm-4 text-center select-amount">$100</div>
+						<div class="col-sm-4 text-center select-amount borderless-left">$500</div>
+						<div class="col-sm-4 text-center select-amount">$1,000</div>
+						<div class="col-sm-4 text-center select-amount other">...</div>						
+					</div>
+				</div>
+			</div>
+			<div class="pane right" id="pane-2">
+				<div class="col-sm-6 no-padding">
+					<input type="text" class="borderless-left borderless-bottom borderless-top" placeholder="First name"/>
+				</div>
+				<div class="col-sm-1 no-padding">
+					<input type="text" placeholder="M" class="borderless-left borderless-bottom borderless-right borderless-top"/>
+				</div>
+				<div class="col-sm-5 no-padding">
+					<input type="text" placeholder="Second name" class="borderless-right borderless-bottom borderless-top"/>						
+				</div>
+				<div class="col-sm-12 no-padding">
+					<input type="text" placeholder="Your email address" class="borderless-left borderless-right borderless-bottom" />						
+				</div>
+				<div class="col-sm-12 no-padding">
+					<input type="text" placeholder="What is the payment for?" class="borderless-left borderless-right borderless-bottom"/>						
+				</div>
+				<div class="col-sm-6 main-select borderless-left">
+					<h1>$50.00</h1>
+				</div>
+				<div class="col-sm-6 select-panel borderless-bottom borderless-left borderless-right">
+					<div class="row grid-select-amount">
+						<div class="col-sm-4 text-center select-amount borderless-left">$1</div>
+						<div class="col-sm-4 text-center select-amount">$5</div>
+						<div class="col-sm-4 text-center select-amount">$10</div>
+						<div class="col-sm-4 text-center select-amount borderless-left">$20</div>
+						<div class="col-sm-4 text-center select-amount active">$50</div>
+						<div class="col-sm-4 text-center select-amount">$100</div>
+						<div class="col-sm-4 text-center select-amount borderless-left">$500</div>
+						<div class="col-sm-4 text-center select-amount">$1,000</div>
+						<div class="col-sm-4 text-center other">...</div>						
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 footer">
+				<div class="remember">
+					<input type="checkbox" />
+					<span>REMEMBER ME?</span>
+					<span class="glyphicon glyphicon-info-sign"></span>							
+				</div>
+				<button class="btn btn-default">PAY NOW</button>
+			</div>
+		</div>				
+	</div>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,209 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1;
+    color: #333;
+    background-color: #fff;
+}
+
+
+
+.main-container {
+    background-image: url("http://lorempixel.com/400/300");
+    background-color: transparent;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+    
+    .plane-logo > img {
+        width: 100px;
+        height: 115px;
+        margin-top: 10px;
+    }
+
+    .main-container > .row {
+        transform: translate(0, -50%);
+        top: 50%;
+        position: relative;
+    }
+
+    .inner-form {
+        width: 100%;
+        height: 95vh;
+    }
+
+    .form-container {
+        background-color: #F1F5EC;
+        height: 100%;
+    }
+
+        .form-container label {
+            font-size: 18px;
+            padding-top: 18px;
+            text-align: left;
+        }
+
+            label {
+                
+            }
+
+    .col-sm-12 {
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+        .col-sm-12 .text-center-big {
+            font-size: 40px;
+        }
+
+        .col-sm-12 .text-center-small {
+            font-size: 27px;
+        }
+
+    .col-sm-1.flight-destination {
+        margin-left: 20px;
+    }
+        #flight-destination {
+            margin-left: 155px;
+        }
+
+
+.form-container input, .form-control:focus {
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid;
+    box-shadow: none;
+    border-radius: 0;
+    font-size: 24px;
+    width: 300px;
+}
+
+.form-group.col-sm-12 .col-sm-1.to {
+    vertical-align: middle;
+}
+
+.form-group.col-sm-12 {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+
+
+.form-container .datepicker {
+    width: 200px;
+}
+
+    .ui-datepicker {
+        margin-top: 5px;
+        position: relative;
+    }
+
+.form-container .input-group-btn {
+    width: 200px;
+}
+
+    .btn.btn-default.dropdown-toggle {
+        width: 200px;
+        padding: 7px;
+        color: #BF4848;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: large;
+    }
+
+
+    #persons {
+        margin-left: -200px;
+        width: 50px;
+        display: inline-block;
+    }
+
+    .flight {
+        margin-left: 15px;
+    }
+
+    .flight-destination {
+        margin-left: 6px;
+    }
+        #flight-destination {
+            margin-left: 80px;
+        }
+
+    .btn.btn-default.dropdown-toggle.special {
+        width: 200px;
+        padding: 7px;
+        color: #BF4848;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: large;
+    }
+
+.row {
+    margin-left: 0;
+    color: #7B6464;
+    margin-right: 0;
+}
+
+
+.dropdown-menu {
+    text-transform: uppercase;
+    color: red;
+}
+
+.btn-footer {
+    margin-left: 30%;
+    margin-top: 0;
+    height: 60px;
+    background-color: #842929;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.btn-footer a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+
+#flight-destination {
+    margin-left: 80px;
+}
+
+.form-inline .form-control {
+    display: inline-block;
+    vertical-align: bottom;
+    margin-left: -15%;
+}
+
+input[type="button" i], input[type="submit" i], input[type="reset" i], input[type="file" i]::-webkit-file-upload-button, button {
+    align-items: flex-start;
+    text-align: center;
+    cursor: default;
+    color: buttontext;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 2px 6px 3px;
+/*    border: 2px outset buttonface;
+*/}
+
+@media (min-width: 768px)
+.form-inline .control-label {
+     margin-bottom: none; 
+    vertical-align: middle;
+}
+
+/*.btn .carret {
+    margin-left: 20px;
+}
+
+.caret-flexible,
+.caret-return {
+    margin-left: 30px;
+}*/
