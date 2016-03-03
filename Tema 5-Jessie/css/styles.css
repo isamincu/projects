@@ -1,0 +1,294 @@
+html,
+body {
+	height: 100%;
+}
+
+.outer {
+	background-image: url('http://eskipaper.com/images/desktop-backgrounds-27.jpg');
+	height: 100vh;
+	width: 100%;
+	background-size: cover;
+	-webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+
+.form-container {
+    background-color: #fff;
+    width: 50%;
+    margin: auto;
+    position: absolute;
+    left: 25%;
+    top: 50%;
+    margin-top: -304px;
+    max-width: 650px;
+}
+
+	.outer:before,
+	.outer:after {
+		content: " ";
+		display: table;
+		height: 20%;
+		clear: both;
+	}
+
+.col {
+	padding-right: 0;	
+	padding-left: 0;
+	border-bottom: solid;
+	border-width: 0.10px;
+	border-color: #DFB1E0;
+
+}
+
+input {
+	border: 1px solid #aaa;
+}
+
+.tab.active {
+    background-color: #DFB1E0;
+    color: #fff;
+    border-top: 0;
+}
+
+.pane {
+	display: none;
+}
+
+
+.tab-arrow {
+	position: absolute;
+    left: 50%;
+    top: 100%;
+    display: none;
+    margin-top: -9px;
+}
+
+.pane.active,
+.tab.active .tab-arrow {
+	display: block;
+}
+/*+++++++++++++++++++Tools++++++++++++++++++++++++++++*/
+
+.borderless-top {
+	border-top: 0;
+}
+
+.borderless-left,
+.row-payment-details .borderless-left {
+	border-left: 0;
+}
+
+.borderless-right,
+.row-payment-details .borderless-right {
+	border-right: 0;
+}
+
+.borderless-bottom,
+.row-payment-details .borderless-bottom {
+	border-bottom: 0;
+}
+
+/*+++++++++++++++++++First Row++++++++++++++++++++++++++++*/
+.details-section {
+	margin-top: 20px;
+}
+
+.personal-details {
+    width: 70%;
+    float: left;
+    margin-left: 10px;
+    margin-top: -20px;
+}
+
+	.image {
+		    width: 90px;
+		    float: left;
+		}
+
+
+			img {
+				width: 100%;
+				border-radius: 5px;
+
+			}
+	.personal-details h4 {
+		margin-top: 30px;
+		color: #616569;
+		font-weight: 600;
+		font-size: x-large;
+	}
+
+	.personal-details input {
+		border-style: none;
+		width: 100%;
+		font-family: verdana;
+    	font-size: large;
+	}
+
+	.gender {
+		border: 0;
+		text-transform: capitalize;
+	}
+
+	
+
+/*++++++++++++++++++++Second Row  (tabs)++++++++++++++++++++++++++++*/
+.row {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+	.row-tabs {
+		text-align: center;
+		margin-top: 20px;
+		height: 50px;
+	}
+
+		.left {/*
+		    border: solid;
+		    border-width: thin;
+		    border-color: #DFB1E0;*/
+		    height: 100%;
+		    border-top: 1px solid #aaa;
+		}
+
+		.right {
+		    border-style: solid;
+		    border-width: thin;
+		    border-color: #aaa;
+		    border-right: 0;
+		    border-bottom: 0;
+		    border-left: 0;
+		    height: 100%;
+		}
+
+		.left h5, 
+		.right h5 {
+			margin-top: 6%;
+			font-weight: 800;
+		}
+
+/*+++++++++++++++++++++++++++++++Third Row+++++++++++++++++++++++*/
+.row-payment-details input {
+	width: 100%;
+	height: 20%;
+	line-height: 40px;
+}
+
+.no-padding { 
+	padding: 0 !important; 
+	margin-top: 0;
+
+}
+
+	.no-padding input {
+		padding-left: 20px;
+	}
+
+	.col-sm-1 input {
+		text-align: center;
+		padding-left: 0;
+	}
+
+
+/*+++++++++++++++++++++++++++++Fifth Row (main select)++++++++++++++++++*/
+.main-select {
+	text-align: center;
+    color: #aaa;
+    height: 199px;
+    border: 1px solid #aaa;
+    padding-top: 10%;
+}
+	
+	.main-select h1 {
+		font-size: 36px;
+	    font-weight: 700;
+	    font-family: cursive;
+	    color: #6E737A;
+	}
+	
+
+.select-panel {
+	border: 1px solid #aaa;
+    padding: 0;
+    line-height: 70px;
+}
+
+		.select-amount,
+		.other {
+			border: 1px solid #aaa;
+			border-right: 0;
+			border-top: 0;
+			height: 66px;
+			vertical-align: middle;
+    		display: inline-block;
+    		color: #aaa;
+		}
+
+		.other {
+		    font-size: 40px;
+		    line-height: 50px;
+		    font-weight: 700;
+    		font-family: initial;
+		}
+
+		.select-amount.active {
+			background-color: #6AB78F;
+			color: #fff;
+			font-weight: bold;
+		}
+
+/*++++++++++++++++++++++++++++Footer Section++++++++++++++++++++++++++++++++++*/
+.footer {
+	line-height: 100px;
+}
+
+
+	.remember {    
+	    width: 50%;
+	    display: inline-block;
+	    float: left;
+	    line-height: 100px;
+	}
+
+		.remember input {
+			margin-left: 10px;
+		}
+
+		.remember span {
+			margin-left: 5px;
+			color: #aaa;
+		    font-weight: 600;
+		}
+
+	.btn-default {
+	display: inline-block;
+    padding: 6px 12px; 
+    margin-bottom: 0; 
+    font-size: 14px;
+    font-weight: 400; 
+    line-height: 3.2;
+    text-align: center;
+     white-space: nowrap; 
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #45D972;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    width: 165px;
+    margin-top: 20px;
+    float: right;
+    margin-right: 10px;
+    color: #fff;
+    font-weight: 700;
+	}
+
