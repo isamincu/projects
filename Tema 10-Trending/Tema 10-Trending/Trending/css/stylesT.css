@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+    }
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+    background-color: #fff;
+    line-height: 1.8;
+}
+
+
+
+.main_container {
+    background-color: #383434;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+    .form_container {
+        background-color: #C1BEBD;
+        height: 100%;
+    }
+
+    .row {
+        background-color: #FDFFF7;
+/*        border-bottom: 1px;
+        border-style: outset;*/
+    }
+
+        h2 {
+            color: #5F5D5D;
+            font-size: 24px;
+            letter-spacing: 2px;
+            padding-top: 20px;
+        }
+
+
+        h3 {
+            color: #A93C3C;
+        }
+
+        h4 {
+            font-size: 15px;
+            margin-top: 0;
+        }
+
+        .italics {
+            font-style: italic;
+            color: #ccc;
+        }
+
+        .name {
+            color: #5F5D5D;
+        }
+
+        p {
+            color: #aaa;
+        }
+
+        .when {
+            color: #CCCCCC;
+        }
+
+        .number {
+            font-size: 20px;
+            color: #887575;
+            width: 17%;
+            display: inline-block;
+            float: right;
+            font-weight: 600;
+        }   
+
+.grey-section {
+    color: #928686;
+}
+
+.col-sm-12 {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 30px;
+    float: none;
+}
+
+    .col-sm-12.bottom {
+        background-color: #C5C4C4;
+    }
+
+    .col-sm-12.bottom > h2 {
+        color: #8C8888;
+    }
+
+/*    .col-sm-12.bottom > h4 {
+        margin-bottom: 20px;
+    }*/
+/*====================================general settings===========================*/
+
+@media (min-width: 1200px)
+.container {
+    width: 0;
+}
+
+@media (min-width: 992px)
+.container {
+    width: 0;
+}
+
+.text-center {
+    text-align: left;
+    width: 80%;
+    float: left;
+    font-weight: 600;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.7;
+}
+
+h1, .h1, h2, .h2, h3, .h3 {
+    margin-top: 29px;
+    margin-bottom: 10px;
+}
+/*
+.row1:after {
+    content: '';
+    display: block;
+    width: 85%;
+/*    background-color: #fff;*/
+
+.row.grey-section {
+    background-color: #C1BEBD;
+
+}
+
+hr {
+    border-top: 2px solid #EADADA;
+    width: 85%;
+    margin-left: 37px;
+    margin-top: 0; 
+    margin-bottom: 0; 
+}   
+
+.hr-dark {
+    border-top: 2px solid #8E8C8C;
+    width: 85%;
+    margin-left: 37px;
+    margin-top: 0; 
+    margin-bottom: 0;
+}
